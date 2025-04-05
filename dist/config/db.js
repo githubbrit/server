@@ -1,8 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.sequelize = void 0;
-const sequelize_1 = require("sequelize");
-exports.sequelize = new sequelize_1.Sequelize("sim800c", "root", "Password@123", {
-    host: "localhost",
-    dialect: "mysql",
+
+const { Sequelize } = require("sequelize");
+
+exports.sequelize = new Sequelize("railway", "root", "bCoEkZcYTHKmieLkbVKcelklJQuKIHlg", {
+  host: "mysql.railway.internal",
+  port: 3306,
+  dialect: "mysql",
 });
