@@ -31,9 +31,11 @@ app.use("/api", auth_route_1.default);
 app.use("/api", sim_route_1.default);
 db_1.sequelize.sync({ alter: true }).then(() => {
     console.log("DB connected");
-    app.listen(PORT,'0.0.0.0', () => {
-        console.log(`Server running on http://localhost:${PORT}`);
-    });
+   console.log("DB connected");
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server running on http://server-production-d4eb.up.railway.app:${PORT}`);
+});
+
 });
 // make a route to generate a password hashed password of the word i right there in this code please i want the hashed format in the console please
 const bcrypt_1 = __importDefault(require("bcrypt"));
