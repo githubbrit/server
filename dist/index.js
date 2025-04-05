@@ -33,7 +33,7 @@ db_1.sequelize.sync({ alter: true }).then(() => {
     console.log("DB connected");
    console.log("DB connected");
 app.listen(PORT, '0.0.0.0', () => {
-    console.log(`Server running on http://server-production-d4eb.up.railway.app:${PORT}`);
+    console.log(`Server running on http://server-production-d4eb.up.railway.app`);
 });
 
 });
